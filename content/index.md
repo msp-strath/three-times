@@ -52,17 +52,35 @@ Borrowing heavily from the idea of *Concept Transfer*
 [@10.1145/3372782.3406270],
 we will look at shifting students from a comfortable point of knowledge
 (i.e. the language they use most)
-through to the language that is most strange:
-Idris.
-To help with this,
-we will use Dafny as a staging post that pushes students into that liminal space of comfortable but strange.
+to a new one.
+
+Our end goal is for students to be comfortable,
+specifically at the level of first/second year University,
+in programming in all three languages.
+
+Python is our base of reference in which we assume students are comfortable in;
+other languages Java, Kotlin, PHP are okay, however, we need to pick one!
+We assume that Dafny is the middle language that has the 'least' difference from Python
+(both are imperative)
+Through Dafny we can push students comfortably into that liminal space of learning to program in a slightly different language.
+Dafny also supports expressions oriented functional programming,
+and,
+as such,
+can act as a stepping stone to the functional world of functional programming.
+As Idris is where the strangness budget will be blown completely.
+
+With this in mind, we will expose students to various programming concepts three times:
+First in Python;
+Then in Dafny;
+and
+finally in Idris.
+
+Where there is no one to one mapping between all three languages,
+we will introduce them as required.
 
 ## Assumptions
 
-We need,
-however,
-a point of reference.
-As such,
+To reiterate,
 we assume that many students will have Python(3) as their primary language of instruction/use,
 and that students will be comfortable with imperative languages in the first instance.
 

@@ -1,0 +1,24 @@
+name: "Quiz: Overview"
+questions:
+  - title: "Python's typing annotations enable static compile time checking of python programs."
+    kind: truefalse
+    choices:
+      - value: "true"
+      - value: "false"
+        correct: true
+
+  - title: "Which of the following facts about Dafny is not true? Select all that apply."
+    kind: mcq
+    choices:
+      - value: "Dafny supports functional and imperative programming using the same syntax."
+        correct: true
+      - value: "Dafny has separate syntax for functional and imperative programming."
+      - value: "Dafny supports type inference"
+      - value: "Dafny is statically typed, and supports objects."
+
+  - title : "Idris is an extension of the Haskell language with dependent types?"
+    kind: truefalse
+    choices:
+      - value: "true"
+      - value: "false"
+        correct: true

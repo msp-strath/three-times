@@ -1,5 +1,22 @@
 title: "Home"
 topics:
+  - name: "Overview"
+    href: "/overview.html"
+#    sections:
+#      - name: "Python"
+#        href: "/overview/python.html"
+#      - name: "Dafny"
+#        href: "/overview/dafny.html"
+#      - name: "Idris"
+#        href: "/overview/idris.html"
+#topics:
+#  - name: "Basics"
+#    href: "/basics.html"
+#    sections:
+#      - name: "Hello World"
+#        href: "/basic/hello-worlds.html"
+#      - name: "Running"
+#        href: "/basic/running.html"
   - name: "Exercises"
     href: "/exercises.html"
     sections:
