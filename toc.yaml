@@ -1,1 +1,19 @@
 title: "Home"
+topics:
+  - name: "Exercises"
+    href: "/exercises.html"
+    sections:
+      - name: "Simple"
+        href: "/exercises/simple.html"
+
+      - name: "Sequences"
+        href: "/exercises/sequences.html"
+
+      - name: "Generic Programming"
+        href: "/exercises/generic.html"
+
+      - name: "More Generic Programming"
+        href: "/exercises/generic-more.html"
+
+      - name: "Structured Data"
+        href: "/exercises/datatypes.html"

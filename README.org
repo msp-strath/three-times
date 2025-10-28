@@ -1,6 +1,6 @@
 #+TITLE: Three Times: Python, Dafny, Idris
 
-'Three Times' is both a teaching
+'Three Times' is a teaching
 (maybe later a research)
 project to transfer concepts from mainstream programming languages to verification-aware ones.
 
