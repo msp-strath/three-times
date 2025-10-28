@@ -1,0 +1,33 @@
+#+TITLE: Three Times: Python, Dafny, Idris
+
+'Three Times' is both a teaching
+(maybe later a research)
+project to transfer concepts from mainstream programming languages to verification-aware ones.
+
+With
+CS886,
+we aim to teach secure-by-design programming using two verification-aware language:
+Dafny
+(a multi-paradigm language)
+and
+Idris
+(a functional language).
+Both of these languages are not widely known,
+and to enable teaching basic verification in these languages students should also be familiar with how to program in these languages.
+Although there are textbooks to engage students,
+a more dedicated resource will help reduce the learning curve and fear of going through an existing 'textbook'.
+This resource will help students learn how to *programme* in Dafny and Idris.
+
+Both Idris and Dafny are relatively *esoteric* languages,
+such that student 'strangeness budgets' will be blown for various reasons.
+We assume that many students will have Python(3) as their primary language of instruction/use.
+
+This repository contains the raw teaching material.
+
+* Install/Building
+
+The engine to deploy/build the site is:
+
+[[https://github.com/jfdm/our-place]]
+
+Then use the =Makefile= to build the site.
