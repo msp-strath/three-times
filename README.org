@@ -31,3 +31,7 @@ The engine to deploy/build the site is:
 [[https://github.com/jfdm/our-place]]
 
 Then use the =Makefile= to build the site.
+
+* Note of Thanks
+Thanks to Bob Atkey for delivering a set of very impressive interactive notes for [CS208](https://personal.cis.strath.ac.uk/robert.atkey/cs208/).
+I have stolen many a good idea from them!

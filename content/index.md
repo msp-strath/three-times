@@ -101,14 +101,19 @@ For each concept we want to discuss we will do it **three times**:
 2. Then Dafny
 3. Then Idris
 
-> **Note**
-> :  that not all concepts will be a direct transfer from one language to the other.
+**Note**
+:  that not all concepts will be a direct transfer from one language to the other.
 
 At the end of these notes are a series of larger exercises taken from,
 gifted,
 from Strathclyde's own:
-
-> CS260 Functional Thinking
+**CS260 Functional Thinking**
 
 Although we list the topics below,
 they are also listed in the sidebar to the left (`<-`).
+
+
+## Thanks
+
+Thanks to Bob Atkey for delivering a set of very impressive interactive notes for [CS208](https://personal.cis.strath.ac.uk/robert.atkey/cs208/).
+I have stolen many a good idea from them!
