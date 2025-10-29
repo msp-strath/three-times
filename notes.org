@@ -1,0 +1,34 @@
+#+TITLE: Notes
+
+
+* Basics
+
++ Imperative Programming (Python -> Dafny)
+  + Binding
+  + While Loops
+  + For loops
+  + Function calls
+  + Methods
+  + Decisions
+
++ Functional Programming (Dafny -> Idris)
+  + Expressions
+  + Conditionsls
+  + bindings
+  + recursions
+
++ Sequences (Imperative) (builtin)
+
+
++ Datatypes
+  + tuples
+  + enums (pattern matching)
+  + records (dataclasses)
+  + unions
+  + Generic Datatypes
+
++ Higher Order Functions
+
++ Sequences (Functional) (datatypes)
+
++ Objects

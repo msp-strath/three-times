@@ -2,7 +2,7 @@
 
 method Main()
 {
-  print "Hello World";
+  print "Hello World\n";
 }
 
 

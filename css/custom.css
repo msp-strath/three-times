@@ -56,11 +56,14 @@ iframe {
     --note-color: #0959da;
     --tip-color: #1a7f37;
     --warning-color: #9a6700;
+    --question-color: #ffd300;
+    --exercise-color: #F76B0E;
 }
 
 /* Alert (Admonition) */
 
-
+div.exercise,
+div.question,
 div.caution,
 div.important,
 div.note,
@@ -72,19 +75,23 @@ div.warning {
     margin-bottom: 1rem;
 }
 
-:is(div.caution,
+:is(div.exercise,
+    div.question,
+    div.caution,
     div.important,
     div.note,
     div.tip,
     div.warning) .title {
     display: flex;
     padding: 1px 2px;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 1;
     align-items: center;
 }
 
-:is(div.caution,
+:is(div.exercise,
+    div.question,
+    div.caution,
     div.important,
     div.note,
     div.tip,
@@ -92,7 +99,9 @@ div.warning {
     margin-right: 0.5rem;
 }
 
-:is(div.caution,
+:is(div.exercise,
+    div.question,
+    div.caution,
     div.important,
     div.note,
     div.tip,
@@ -100,12 +109,53 @@ div.warning {
     margin: 0.3rem 0.3rem 0 0;
 }
 
-:is(div.caution,
+:is(div.exercise,
+    div.question,
+    div.caution,
     div.important,
     div.note,
     div.tip,
     div.warning)> :last-child {
     margin-bottom: 0;
+}
+
+div.exercise {
+    border-left-color: var(--exercise-color);
+}
+
+div.exercise .title {
+    color: var(--exercise-color);
+}
+
+div.exercise .title p:first-child::before {
+    content: "\003F" "\005F";
+}
+
+div.exercise > p:first-child::before {
+
+    content: "\003E" "\005F" " " "Exercise";
+    display: block;
+     font-weight: bold;
+    color: var(--exercise-color);
+}
+div.question {
+    border-left-color: var(--question-color);
+}
+
+div.question .title {
+    color: var(--question-color);
+}
+
+div.question .title p:first-child::before {
+    content: "\003F";
+}
+
+div.question > p:first-child::before {
+
+    content: "\003F" " " "Question";
+    display: block;
+     font-weight: bold;
+    color: var(--question-color);
 }
 
 div.caution {
@@ -125,6 +175,7 @@ div.caution > p:first-child::before {
     /* ❗ Exclamation Mark */
     content: "\0021" " " "Caution";
     display: block;
+     font-weight: bold;
     color: var(--caution-color);
 }
 
@@ -145,6 +196,7 @@ div.important > p:first-child::before {
     /* ⚑ Black Flag */
     content: "\2691" " " "Important";
     display: block;
+     font-weight: bold;
     color: var(--important-color);
 }
 
@@ -165,6 +217,7 @@ div.note > p:first-child::before {
     /* ⓘ Circle Small Letter */
     content: "\24D8" " " "Note";
     display: block;
+     font-weight: bold;
     color: var(--note-color);
 }
 
@@ -185,6 +238,7 @@ div.tip > p:first-child::before {
     /* 💡 Electric Light Bulb */
     content: "\1F4A1" " " "Caution";
     display: block;
+     font-weight: bold;
     color: var(--tip-color);
 }
 
@@ -205,6 +259,7 @@ div.warning > p:first-child::before {
     /* ⚠ Warning Sign */
     content: "\26A0" " " "Warning";
     display: block;
+     font-weight: bold;
     color: var(--warning-color);
 }
 

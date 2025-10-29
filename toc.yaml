@@ -14,9 +14,9 @@ topics:
     href: "/hello.html"
     sections:
       - name: "Writing Hello"
-        href: "/hello/hello.html"
-#      - name: "Running"
-#        href: "/basic/running.html"
+        href: "/hello/writing.html"
+      - name: "Saying Hello"
+        href: "/hello/saying.html"
   - name: "Exercises"
     href: "/exercises.html"
     sections:
