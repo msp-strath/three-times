@@ -4,97 +4,139 @@ toc: true
 quiz: true
 ---
 
+In these notes we are looking at three languages:
+Python,
+Dafny,
+and
+Idris.
+All three languages of these languages are *very* featured.
 
-All three languages are *very* featured,
-to that end we limit our look to fundamental aspects of the language as required for the course.
-
-In this initial topic we will provide an overview of the *programming* features of Python(3), Dafny, and Idris(2).
+In this initial topic,
+we will provide an overview of the *programming* features of Python(3), Dafny, and Idris(2).
+CS886 itself will delve into the verification side.
+Within these notes we will explain more features as we go,
+but still features required for programming.
 
 
 ## Python
 
-Here we summarise the *programming features* of Python(3).
+[Python](https://www.python.org/)
+is a well-known,
+long-standing,
+widely-used
+programming language.
+As a multi-paradigm language,
+Python supports:
 
-Python is a multi-paradigm language that supports:
++ Imperative programming using statements, methods, and expressions.
 
-+ Imperative programming using statements and expressions, and is
-  effectful (allowing printing and communication with the outside
-  world);
++ Effectful programming at will,
+  supporting printing and communication with the outside world at will within your programs;
+
++ Object Oriented programming using classes that support inheritance,
+  and duck typing to define interfaces for describing methods that objects support;
 
 + Functional programming using lambdas;
-
-+ Object Oriented programming using classes that support inheritance;
 
 We can write our programs using any of these paradigms,
 however,
 by default imperative programming is the norm.
 
-Moreover Python has
+Python is also an *interpreted* language,
+meaning that programs are executed on the fly.
 
-+ Indentation based syntax, with statements and expressions
+Python is dynamically typed.
+The types of our values, expressions, and statements are checked at runtime.
+In fact Python is *gradually typed*.
+Supporting typing hints that static analysis tools,
+such as `mypy`,
+can use to check that type-hinted and non-type-hinted code are well-typed.
 
-And Python is:
+::: important
+These hints,
+however,
+are dropped at runtime!
+Typing annotations are checked at both compile and runtimes.
+:::
 
-+ gradually typed, mixing dynamic typing with static analysis using type hints.
+On the surface,
+Python has indentation based syntax, with-statements, pattern matching, decorators,
+Python uses `#` for block and line comments.
 
 As a language,
-Python is very rich and supports much more functionality.
-
-**Note**
-:  Python supports typing *hints*,
-   typing information that is not checked at runtime.
-   Tooling such as `mypy` can use these hints for static analysis.
-   These hints,
-   however,
-   are dropped at runtime!
-   Typing annotations are checked at both compile and runtimes.
-
-Also Python uses `#` for block and line comments.
+Python is very rich.
+We will not go beyond the basics in these notes.
 
 ## Dafny
 
-Here we summarise the *programming features* of [Dafny](https://www.dafny.org).
+[Dafny](https://www.dafny.org)
+is an industry backed verification-aware programming language.
+Originally developed at Microsoft research,
+Dafny is championed by Amazon and has been used in developing products at both companies.
+Like Python,
+Dafny is too a multi-paradigm language supporting:
 
-Dafny is:
++ Imperative programming using statements, methods, and expressions.
 
-+ Multiparadigm, supporting imperative, functional, and Object-Orientation
++ Effectful programming at will,
+  supporting printing and communication with the outside world at will within your programs;
 
-We can write our programs using any of these paradigms, however, by
-default Imperative programming is core.
++ Object Oriented programming using classes that support inheritance;
+  traits to define the methods that objects must support;
+
++ Functional programming using functions and expressions
+
++ Static typing,
+  meaning that all values, expressions, and statements must be typed
+  (types can be inferred)
+  and those types are checked at compile time;
 
 
-+ statically typed, with support for type inference
+The syntax for functions and imperative programs are separate.
+The imperative fragment of Dafny takes from `C`/`C#`-style languages complete with statements and expressions.
+The functional fragment is almost C-style but supports only expressions.
+Although we can write our programs using either syntax,
+by default imperative programming is the **main** language.
 
-+ Different syntax for imperative and functional programming
-  + Imperative supports C/C#-style syntax complete with statements and expressions
-  + Functional language is almost C-style but only expressions
-
-As a language, Dafny is very rich and supports other functionality
-such as traits (think interfaces).
-
-This minicourse covers the core aspects of
-Dafny that is required for *programming*.
-
-Any other features required for the course that are not documented
-here will be introduced as required during the module.
-Specifically, Week 2 in CS886 will begin looking at using Dafny for verification.
-
-The reference guide for Dafny is available here:
-
-<https://dafny.org/latest/DafnyRef/DafnyRef>
-
-Dafny's syntax takes from the C-family of languages,
-with differences here and there.
-Where possible we will explain the differences.
-
-Also Dafny uses:
+Dafny uses:
 
 + single line comments marked `//`;
 + block comments starting with `/*` `*/`;
 
+::: warning
+Although the functional and imperative syntax are separate,
+there is some overlap between them!
+:::
+
+Unlike Python,
+Dafny is a *compiled* language meaning we compile our programs down to an executable from which we can run our programs.
+In fact,
+Dafny supports *Multi-language code generation*,
+enabling Dafny programs to be 'compiled' down to different languages.
+For example,
+the Dafny compiler can create versions of your program in `C#`,
+Python,
+GO,
+and Rust.
+
+Interestingly,
+Dafny is also a *termination*-aware language.
+This means that Dafny will check to see if your programmes are likely to terminate.
+Dafny,
+however,
+will let you wrote programs that are non-terminating.
+
+As a language, Dafny is very rich and supports other functionality we will not mention here.
+We will not explore all of what Dafny has to offer here nor in CS886.
+Any other features required for CS886,
+that are not documented here,
+will be introduced as required during the module.
+
 ### Guides
 
 Some programming guides for Dafny:
+
++ [**The** Reference Guide](https://dafny.org/latest/DafnyRef/DafnyRef)
 
 + [The Online Tutorial](https://dafny.org/dafny/OnlineTutorial/guide.html)
 
@@ -104,33 +146,85 @@ Some programming guides for Dafny:
 
 ## Idris
 
-Here we summarise the *programming features* of [Idris](https://idris-lang.org).
+[Idris](https://idris-lang.org)
+is a research-backed verification-aware programming language.
+Originally developed at the University of St Andrews,
+Idris is a general purpose functional programming language that
+supports dependent types.
+(We will talk about them more in CS886.)
+Since its inception Idris has gone through at least one major change,
+Idris(2) improved the Idris language by supporting quantities
+(we will talk about them more in CS886)
+and made Idris(2) self-hosting.
+In these notes we will talk about features common to all Idris versions,
+and thus refer to Idris(2) as just Idris.
 
-Idris(2) is a general purpose functional programming language that
-supports:
+Unlike Python and Dafny,
+Idris is not a multi-paradigm language.
+Idris is a:
 
-+ Dependent types
++ *functional programming language*,
+  supporting expressions and functions;
 
-We write Idris programs in a functional style,
-only expressions,
-and use dependent types to reason about the code.
-Like Dafny,
-Idris is statically typed with limited type inference
+  Dependent types enables types to depend on values which we use to reason about code.
+  Again,
+  CS886 delves into this aspect of Idris.
+
++ *pure language*,
+  which means we are **not** free to communication with the outside world at will;
+  if we wish to communicate with the outside world
+  (i.e. printing and reading)
+  then we have to do so under controlled conditions;
+
++ *total language*,
+  which means that the compiler is equipped with various checkers to reason about program execution,
+  namely, coverage and totality.
+  We will look at what coverage is when we look at [pattern matching](#).
+  The totality checker,
+  will check to see if your programmes are likely to terminate,
+  and will prevent you from compiling partial programmes.
+  (We can control what Idris checks.)
+
++ *statically typed*,
+  like Dafny,
+  Idris is statically typed,
+  meaning types are checked at compile types;
+  unlike dafny, Idris has more limited type inference (due to dependent types);
 
 Idris' syntax ostensibly takes from the Haskell-family of languages,
-with differences here and there. Where possible we will explain the
-differences.
+with differences here and there.
+Where possible we will explain the differences.
 
-These files will cover the core aspects of
-Idris that is required for the course.
-
-Any other features required for the course that are not documented
-here will be introduced as required during the module.
-
-Also Idris uses:
+Idris uses:
 
 + single line comments marked `--`;
 + block comments starting with `{-` `-}`;
+
+Like Dafny,
+Idris is too a *compiled* language meaning we compile our programs down to an executable from which we can run our programs.
+Also like Dafny,
+Idris supports *multi-language code generation*,
+enabling Idris programs to be 'compiled' down to different languages.
+For example,
+the Idris compiler can create versions of your program in
+Chez Scheme,
+Racket,
+Javascript,
+Java,
+PHP,
+and
+Python
+
+As a language,
+Idris is relatively simple.
+The compiler,
+and other features of the language implementation,
+however,
+is rich with functionality.
+We will not explore all of what Idris has to offer here nor in CS886.
+Any other features required for CS886,
+that are not documented here,
+will be introduced as required during the module.
 
 ### Guides
 
