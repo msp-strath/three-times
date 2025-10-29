@@ -1,0 +1,7 @@
+build/
+*.cs
+*.csproj
+*.json
+*.dll
+*.pdb
+obj/
