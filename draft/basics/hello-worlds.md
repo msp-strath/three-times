@@ -39,3 +39,6 @@ method Main()
 main :: IO ()
 main = printLn "Hello"
 ```
+
+
+methods that support mandatory, optional and keyword arguments...

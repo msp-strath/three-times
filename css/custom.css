@@ -26,7 +26,6 @@ iframe {
     border: none;
 }
 
-
 @media (min-width:901px){
     .w3-sidebar
     .w3-collapse{
@@ -223,4 +222,11 @@ div.csl-left-margin {
 }
 div.csl-right-inline {
     display: inline;
+}
+
+
+aside:not(.toc):before {
+    content: "An" " " "Aside:";
+    font-weight: bold;
+    color: black;
 }
