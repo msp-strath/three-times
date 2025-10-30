@@ -7,8 +7,17 @@ body {
     grid-template-columns: 1fr min(80rem, 90%) 1fr;
 }
 
+body > .navigation {
+    align-self: start;
+    padding-top: 1em;
+    color: var(--text-light);
+}
 body > #hakyllBookNavbar {
     z-index: 3;
+}
+
+.w3-sidebar {
+    background-color: var(--accent-bg);
 }
 
 #quiztarget {
@@ -32,6 +41,9 @@ iframe {
         display:block!important
     }
 
+    .w3-sidebar {
+        border-right: var(--border-width) solid var(--border);
+    }
 }
 
 @media (max-width:900px){
@@ -69,8 +81,8 @@ div.important,
 div.note,
 div.tip,
 div.warning {
-    color: inherit;
     border-left: 0.25rem solid var(--admonition-color);
+    background-color: var(--accent-bg);
     padding: 4px 1rem;
     margin-bottom: 1rem;
 }
