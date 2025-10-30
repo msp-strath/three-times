@@ -295,5 +295,5 @@ div.csl-right-inline {
 aside:not(.toc):before {
     content: "An" " " "Aside:";
     font-weight: bold;
-    color: black;
+    color: var(--accent);
 }

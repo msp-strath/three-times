@@ -117,17 +117,25 @@ For each concept we want to discuss we will do it **three times**:
 2. Then Dafny
 3. Then Idris
 
-**Note**
-:  that not all concepts will be a direct transfer from one language to the other.
+
+::: note
+that not all concepts will be a direct transfer from one language to the other.
+:::
 
 At the end of these notes are a series of larger exercises taken from,
 gifted,
 from Strathclyde's own:
 **CS260 Functional Thinking**
 
-Although we list the topics below,
-they are also listed in the sidebar to the left (`<-`).
-
+| Topic                  | Python | Dafny | Idris |
+|------------------------|--------|-------|-------|
+| Hello world            | X      | X     | X     |
+| Imperative Programming | X      | X     |       |
+| Functional Programming |        | X     | X     |
+| Datatypes              | X      | X     | X     |
+| Sequences (Functional) |        | X     | X     |
+| Higher Order Functions |        | X     | X     |
+: topics covered
 
 ## Thanks
 
