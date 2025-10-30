@@ -17,6 +17,26 @@ topics:
         href: "/hello/writing.html"
       - name: "Saying Hello"
         href: "/hello/saying.html"
+
+  - name: "Datatypes"
+    href: "#"
+
+    sections:
+      - name: "Tuples"
+        href: "#"
+
+      - name: "Enumerations (and Matching)"
+        href: "#"
+
+      - name: "Records (and Dataclasses)"
+        href: "#"
+
+      - name: "Unions"
+        href: "/datatypes/unions.html"
+
+      - name: "Generic Datatypes"
+        href: "/datatypes/generic.html"
+
   - name: "Exercises"
     href: "/exercises.html"
     sections:

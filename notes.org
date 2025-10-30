@@ -1,34 +1,32 @@
 #+TITLE: Notes
 
+* DONE Overview
+* TODO Imperative Programming (Python -> Dafny)
++ [ ] Binding
++ [ ] While Loops
++ [ ] For loops
++ [ ] Function calls
++ [ ] Methods
++ [ ] Decisions
++ [ ] Sequences (Imperative) (builtin)
 
-* Basics
+* TODO Functional Programming (Dafny -> Idris)
 
-+ Imperative Programming (Python -> Dafny)
-  + Binding
-  + While Loops
-  + For loops
-  + Function calls
-  + Methods
-  + Decisions
++ [ ] Expressions
++ [ ] Conditionsls
++ [ ] bindings
++ [ ] recursions
 
-+ Functional Programming (Dafny -> Idris)
-  + Expressions
-  + Conditionsls
-  + bindings
-  + recursions
+* TODO Datatypes
 
-+ Sequences (Imperative) (builtin)
++ [ ] tuples
++ [ ] enums (pattern matching)
++ [ ] records (dataclasses)
++ [X] unions
++ [X] Generic Datatypes
 
+* TODO Higher Order Functions
+* TODO Sequences (Functional) (datatypes)
 
-+ Datatypes
-  + tuples
-  + enums (pattern matching)
-  + records (dataclasses)
-  + unions
-  + Generic Datatypes
-
-+ Higher Order Functions
-
-+ Sequences (Functional) (datatypes)
-
-+ Objects
+* TODO Objects
+* DONE Exercises
