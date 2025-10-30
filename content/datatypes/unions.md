@@ -76,7 +76,8 @@ datatype MaybeStr = Nothing | Just(value : string)
 The syntax in Dafny for datatypes is the same as for records!
 :::
 
-In functional programming datatypes are actually known as:
+Remember that in  functional programming,
+datatypes are actually known as:
 **algebraic datatypes**,
 where we can construct structured data as a **sum of products**.
 That is,

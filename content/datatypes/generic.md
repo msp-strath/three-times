@@ -54,6 +54,12 @@ Within Python
 (and Dafny where they are called 'Traits')
 Protocols are associated with objects and we will not consider them further.
 
+
+<!--
+::: caution
+It is important to not confuse the `Any`
+
+-->
 ## Dafny
 
 Let us now look at specifying generic datatypes in Dafny.
@@ -74,7 +80,9 @@ We use these to signify the type variable.
 ::: information
 We can refer to type variables also as parameters.
 Some people will argue that variables are different to parameters.
-That conversation is for another day.
+That conversation is,
+however,
+for another day.
 :::
 
 Similar to Python,
@@ -90,6 +98,12 @@ and
 ```
 method IsJust<T>(s : Optional<T>) returns (b : bool)
 ```
+
+
+::: exercise
+When we first discussed datatypes we talked about tuples.
+Try to construct a `Pair` datatype complete with explicit and native projection functions.
+:::
 
 ## Idris
 
@@ -108,8 +122,7 @@ Type variables **must** begin with a lower case letter in Idris.
 :::
 
 
-As Idris is dependently typed there is more going underneath the hood,
-that you may initially appreciate.
+As Idris is dependently typed, there is more going underneath the hood than you may initially appreciate.
 Type variables are *implicitly* bound, and are thus identifiers.
 So we need to distinguish these (and other) variables from (type and data) constructors and other variables when it is not clear what these variables are.
 

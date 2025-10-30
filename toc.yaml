@@ -23,13 +23,16 @@ topics:
 
     sections:
       - name: "Tuples"
-        href: "#"
+        href: "/datatypes/tuples.html"
 
       - name: "Enumerations (and Matching)"
-        href: "#"
+        href: "/datatypes/enums.html"
 
-      - name: "Records (and Dataclasses)"
-        href: "#"
+      - name: "Products"
+        href: "/datatypes/products.html"
+
+      - name: "Records"
+        href: "/datatypes/records.html"
 
       - name: "Unions"
         href: "/datatypes/unions.html"

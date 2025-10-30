@@ -19,9 +19,10 @@
 
 * TODO Datatypes
 
-+ [ ] tuples
-+ [ ] enums (pattern matching)
-+ [ ] records (dataclasses)
++ [X] tuples
++ [X] enums (pattern matching)
++ [X] products
++ [X] records (dataclasses)
 + [X] unions
 + [X] Generic Datatypes
 
