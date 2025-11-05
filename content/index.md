@@ -111,12 +111,11 @@ and each topic *should* correspond to a bitesize chunk of language learning.
 We will guide you through the basics,
 and pepper the material with simple MCQs to help provide formative feedback and miniexercises to help stimulate your learning.
 
-For each concept we want to discuss we will do it **three times**:
+For each concept we will try and do it **three times**:
 
 1. In Python
 2. Then Dafny
 3. Then Idris
-
 
 ::: note
 that not all concepts will be a direct transfer from one language to the other.
@@ -127,15 +126,28 @@ gifted,
 from Strathclyde's own:
 **CS260 Functional Thinking**
 
-| Topic                  | Python | Dafny | Idris |
-|------------------------|--------|-------|-------|
-| Hello world            | X      | X     | X     |
-| Imperative Programming | X      | X     |       |
-| Functional Programming |        | X     | X     |
-| Datatypes              | X      | X     | X     |
-| Sequences (Functional) |        | X     | X     |
-| Higher Order Functions |        | X     | X     |
-: topics covered
+**[Hello world](/hello.html)**
+:   Demonstrating how to
+    [write](/hello/writing.html)
+    and
+    [run](/hello/running.html)
+    a simple program in each language.
+
+**[Basic Programming](/basics.html)**
+:  Demonstrating basic programming concepts such as:
+   [binding](/basics/binding.html);
+   [conditions](/basics/conditionals);
+   and
+   control flow.
+
+
+**[Datatypes](/datatypes.html)**
+:  Demonstrating the various ways in which we can specify,
+   and work with,
+   structured data.
+
+
+
 
 ## Thanks
 

@@ -128,7 +128,14 @@ function toString(s : Size) : string
 }
 ```
 
-There are is little difference in syntax between Dafny's two languages.
+::: warning
+There is little difference between Dafny's two languages.
+It is easy to make mistakes.
+:::
+
+
+Remember that `match` in Dafny's functional fragment is an *expression*.
+Which means we can use it where expressions are expected.
 For example, consider the following rewrite of `ToString2`.
 
 ```

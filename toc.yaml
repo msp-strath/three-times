@@ -1,15 +1,11 @@
 title: "Home"
-#topics:
-#    sections:
-#      - name: "Python"
-#        href: "/overview/python.html"
-#      - name: "Dafny"
-#        href: "/overview/dafny.html"
-#      - name: "Idris"
-#        href: "/overview/idris.html"
+
 topics:
+  # [ Overview ]
   - name: "Overview"
     href: "/overview.html"
+
+  # [ Hello World ]
   - name: "Hello World"
     href: "/hello.html"
     sections:
@@ -18,8 +14,39 @@ topics:
       - name: "Saying Hello"
         href: "/hello/saying.html"
 
+  # [ Basics ]
+  - name: "Basics"
+    href: "/basics.html"
+
+    sections:
+      - name: "Binders"
+        href: "/basics/binding.html"
+
+      - name: "Expressions"
+        href: "/basics/expressions.html"
+
+      - name: "Conditionals"
+        href: "/basics/conditionals.html"
+
+      - name: "Functions/Methods"
+        href: "/basics/blocks.html"
+
+      - name: "Loops"
+        href: "/basics/loops.html"
+
+      - name: "Iterators"
+        href: "/basics/iteration.html"
+
+      - name: "Recursion"
+        href: "/basics/recursion.html"
+
+      - name: "Sequences"
+        href: "/basics/sequences.html"
+
+
+  # [ Datatypes ]
   - name: "Datatypes"
-    href: "#"
+    href: "/datatypes.html"
 
     sections:
       - name: "Tuples"
@@ -40,6 +67,7 @@ topics:
       - name: "Generic Datatypes"
         href: "/datatypes/generic.html"
 
+  # [ Exercises ]
   - name: "Exercises"
     href: "/exercises.html"
     sections:
