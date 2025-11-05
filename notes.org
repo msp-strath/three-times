@@ -9,9 +9,9 @@
 + [X] Conditionsls
 + [ ] Function/Methods
 + [X] While
-+ [ ] For
-+ [ ] recursion
-+ [ ] Sequences (both)
++ [X] For
++ [X] recursion
++ [X] Sequences (both)
 
 * DONE Datatypes
 
