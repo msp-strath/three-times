@@ -1,5 +1,6 @@
 ---
 title: "Union Types"
+toc: true
 ---
 
 This section looks at [Union Types](https://en.wikipedia.org/wiki/Union_type).

@@ -1,5 +1,6 @@
 ---
 title: "Enumrations"
+toc: true
 ---
 
 Enumerations are datatypes that enumerate some values.

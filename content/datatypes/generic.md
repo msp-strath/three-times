@@ -1,5 +1,6 @@
 ---
 title: "Generic Datatypes"
+toc: true
 ---
 
 So far in our look at data types,

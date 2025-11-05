@@ -199,9 +199,10 @@ we will can only repeat expressions using
 
 ## Coda
 
-Loops are an important imperative control flow operation.
-[Iterators](/basics/iteration.html)
-are bespoke statements that enable repetition when iterating over specific data structures.
+Loops are an important imperative control flow operation,
+enabling code to be repeated under certain conditions.
+Next we will look at [Iterators](/basics/iteration.html),
+bespoke statements that enable repetition when iterating over specific data structures.
 The repetition provided by Loops is based on tests.
 We will look at iterators next,
 before looking at [Recursion](/basics/recursion.html) which provides *a* generalised way to repeat one's actions.

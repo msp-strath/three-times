@@ -1,8 +1,9 @@
 ---
 title: Tuples "(and Pairs)"
+toc: true
 ---
 
-We begin our look at dataypes with [Pairs]()
+We begin our look at dataypes with Pairs
 and tuples.
 (Tuples being pairs with arbitrary elements).
 A datatype builtin to many languages as a primtive.
