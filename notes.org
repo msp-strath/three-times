@@ -2,12 +2,12 @@
 
 * DONE Overview
 
-* TODO Basic Programming
+* DONE Basic Programming
 
 + [X] Binding
-+ [ ] Expressions
++ [X] Expressions
 + [X] Conditionsls
-+ [ ] Function/Methods
++ [X] Function/Methods
 + [X] While
 + [X] For
 + [X] recursion

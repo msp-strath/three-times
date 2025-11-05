@@ -1,5 +1,6 @@
 ---
 title: "Variables"
+toc: true
 ---
 
 Let us begin our deeper dive into imperative programming with *variables*.
