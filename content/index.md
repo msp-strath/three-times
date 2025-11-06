@@ -19,7 +19,8 @@ at the
 Please send comments and questions to
 [Jan de Muijnck-Hughes](mailto:jan.de-muijnck-hughes@strath.ac.uk)
 ([`WWW`](https://tyde.systems)).
-
+The source code for 'Three Times' is available on the
+[MSP GitHub](https://github.com/msp-strath/three-times).
 
 ## Why 'Three Times'?
 
