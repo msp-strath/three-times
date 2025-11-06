@@ -107,6 +107,27 @@ if __name__=="__main__":
   print(eq(inst_str,"A","A"))
 ```
 
+We also need to simulate `Ordering`,
+we do so with an enum:
+
+```
+class Ordering(Enum):
+  LT = 1
+  EQ = 2
+  GT = 3
+```
+
+and our compare methods will be:
+
+```
+def compare[T](prf : Order[T], x : T, y : T) -> Ordering:
+    if lt(prf,x,y):
+        return LT
+    if gt(prf,x,y):
+        return GT
+    return EQ
+```
+
 ## Dafny
 
 We can represent the `Ord` interface using Dafny's
@@ -171,5 +192,25 @@ method Example()
   print gt(inst_str,"B","A");
   print eq(inst_str,"B","B");
   print eq(inst_str,"A","B");
+}
+```
+
+We also need to simulate `Ordering`,
+we do so with a datatype:
+
+```
+datatype Ordering = LT | EQ | GT
+```
+
+and our compare methods will be:
+
+```
+function compare<T>(inst : Ord<T>, x : T, y : T) : Ordering
+{
+  if lt(inst,x,y)
+    then LT
+    else if gt(inst,x,y)
+         then GT
+         else EQ
 }
 ```
