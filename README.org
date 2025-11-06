@@ -1,4 +1,4 @@
-#+TITLE: Three Times: Python, Dafny, Idris
+#+TITLE: Three Times: Python, Dafny & Idris
 
 'Three Times' is a teaching
 (maybe later a research)
@@ -16,7 +16,7 @@ Both of these languages are not widely known,
 and to enable teaching basic verification in these languages students should also be familiar with how to program in these languages.
 Although there are textbooks to engage students,
 a more dedicated resource will help reduce the learning curve and fear of going through an existing 'textbook'.
-This resource will help students learn how to *programme* in Dafny and Idris.
+This resource will help students learn how to *program* in Dafny and Idris.
 
 Both Idris and Dafny are relatively *esoteric* languages,
 such that student 'strangeness budgets' will be blown for various reasons.
@@ -33,5 +33,5 @@ The engine to deploy/build the site is:
 Then use the =Makefile= to build the site.
 
 * Note of Thanks
-Thanks to Bob Atkey for delivering a set of very impressive interactive notes for [CS208](https://personal.cis.strath.ac.uk/robert.atkey/cs208/).
+Thanks to Bob Atkey for delivering a set of very impressive interactive notes for [[https://personal.cis.strath.ac.uk/robert.atkey/cs208/][CS208]].
 I have stolen many a good idea from them!
