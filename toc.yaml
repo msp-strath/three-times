@@ -96,3 +96,10 @@ topics:
 
       - name: "Structured Data"
         href: "/exercises/datatypes.html"
+
+  # [ Generic ]
+  - name: "Addendum"
+    href: "/addendum.html"
+    sections:
+      - name: "Interfaces"
+        href: "/addendum/interfaces.html"
