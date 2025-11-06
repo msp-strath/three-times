@@ -44,7 +44,7 @@ to enable teaching basic verification,
 students should also be familiar with how to program in these languages.
 Although there are textbooks to engage students,
 a more dedicated resource will help reduce the learning curve and fear of going through an existing 'textbook'.
-This resource will help students learn how to *programme* in Dafny and Idris.
+This resource will help students learn how to *program* in Dafny and Idris.
 
 Borrowing heavily from the idea of *Concept Transfer*
 [@10.1145/3372782.3406270],
@@ -52,20 +52,20 @@ we will look at shifting students from a comfortable point of knowledge
 (i.e. the language they use most)
 to a new one.
 
-Our end goal is for students to be comfortable,
-specifically at the level of first/second year University,
-in programming in all three languages.
-
 Python is our base of reference in which we assume students are comfortable in;
 other languages Java, Kotlin, PHP are okay, however, we need to pick one!
 We assume that Dafny is the middle language that has the 'least' difference from Python
 (both are imperative)
 Through Dafny we can push students comfortably into that liminal space of learning to program in a slightly different language.
-Dafny also supports expressions oriented functional programming,
+Dafny also supports functional programming,
 and,
 as such,
 can act as a stepping stone to the functional world of functional programming.
 As Idris is where the strangness budget will be blown completely.
+
+Our end goal is for students to be comfortable,
+specifically at the level of first/second year University,
+when programming in all three languages.
 
 With this in mind, we will expose students to various programming concepts three times:
 First in Python;
@@ -106,10 +106,12 @@ in Dafny and Idris.
 
 ## Topics
 
-This minicourse is split into `X` topics,
-and each topic *should* correspond to a bitesize chunk of language learning.
+This minicourse is split into several topics,
+and each topic *should* correspond to a reasonable chunk of language learning.
 We will guide you through the basics,
-and pepper the material with simple MCQs to help provide formative feedback and miniexercises to help stimulate your learning.
+and
+(will eventually)
+pepper the material with simple MCQs to help provide formative feedback and miniexercises to help stimulate your learning.
 
 For each concept we will try and do it **three times**:
 
@@ -121,10 +123,8 @@ For each concept we will try and do it **three times**:
 that not all concepts will be a direct transfer from one language to the other.
 :::
 
-At the end of these notes are a series of larger exercises taken from,
-gifted,
-from Strathclyde's own:
-**CS260 Functional Thinking**
+At the end of these notes are a series of larger exercises gifted from Strathclyde's own:
+**CS260 Functional Thinking**.
 
 **[Hello world](/hello.html)**
 :   Demonstrating how to
@@ -140,13 +140,13 @@ from Strathclyde's own:
    and
    control flow.
 
-
 **[Datatypes](/datatypes.html)**
 :  Demonstrating the various ways in which we can specify,
    and work with,
    structured data.
 
-
+**[Generic Programming](/generic.html)**
+:  Demonstrating the various ways in make our code more generic and reduce repetition.
 
 
 ## Thanks

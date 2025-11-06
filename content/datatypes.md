@@ -34,8 +34,6 @@ we will look at:
   how we can make working with `products` easier;
 + [(tagged) unions](/datatypes/unions.html),
   how we can generalise `enums` to discriminate between values based on a label;
-+ [generic datatypes](/datatypes/generic.html),
-  how we can generalise datatypes to work with different types of value;
 
 ## Learning Outcomes
 

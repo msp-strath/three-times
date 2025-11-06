@@ -30,7 +30,7 @@ do not do so!
 Python supports intersection types.
 We show this by demonstrating an example of the `Option type` as a raw union.
 
-```{.python}
+```
 def isJust(v : str | None):
     match v:
         case str():
@@ -44,7 +44,7 @@ When working with these values we have to match on their constructor to discrimi
 
 We can also define a type synonym to make our functions easier to read.
 
-```{.python}
+```
 type MaybeStr = str | None
 
 def isJust(v : MaybeStr):
@@ -68,7 +68,7 @@ but use bar
 (`|`)
 to discriminate between the options.
 
-```{.dafny}
+```
 datatype MaybeStr = Nothing | Just(value : string)
 
 ```
@@ -86,7 +86,7 @@ a tagged union is the choice between a bunch or records which themselves can con
 
 Much like python we can use `match` to discriminate between the different choices.
 
-```{.dafny}
+```
 function isJust(s : MaybeStr) : bool
 {
   match s
@@ -102,7 +102,7 @@ Wildcards can be within the constructor pattern.
 
 We can also write this function imperatively.
 
-```{.dafny}
+```
 method IsJust(s : MaybeStr) returns (b : bool)
 {
   match s
@@ -119,7 +119,7 @@ method IsJust(s : MaybeStr) returns (b : bool)
 Idris like Dafny supports algebraic datatypes.
 Simple datatypes take an almost similar form:
 
-```{.idris}
+```
 data MaybeStr = Nothing | Just String
 
 ```
@@ -139,7 +139,7 @@ the above definition is what the simple definition is transformed to internally!
 
 We can then use pattern matching on function arguments to discriminate between the choices:
 
-```{.idris}
+```
 isJust : MaybeStr -> Bool
 isJust Nothing = false
 isJust (Just _) = true

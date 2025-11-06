@@ -20,9 +20,14 @@
 + [X] products
 + [X] records (dataclasses)
 + [X] unions
+
+
+
+* DONE Higher Order Functions
 + [X] Generic Datatypes
++ [X] Generic Functions
++ [X] Higher-Order
 
 
-* TODO Higher Order Functions
 * TODO Objects
 * DONE Exercises

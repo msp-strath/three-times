@@ -64,8 +64,19 @@ topics:
       - name: "Unions"
         href: "/datatypes/unions.html"
 
+  # [ Generic ]
+  - name: "Generic Code"
+    href: "/generic.html"
+    sections:
+
       - name: "Generic Datatypes"
-        href: "/datatypes/generic.html"
+        href: "/generic/datatypes.html"
+
+      - name: "Generic Methods/Functions"
+        href: "/generic/datatypes.html"
+
+      - name: "Higher-Order Programs"
+        href: "/generic/higher-order.html"
 
   # [ Exercises ]
   - name: "Exercises"

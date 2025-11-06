@@ -17,7 +17,7 @@ Within python this is not a 'main method', rather it is a name check.
 
 See the following:
 
-```{.python}
+```
 if __name__=="__main__":
     print("Hello World")
 ```
@@ -37,7 +37,7 @@ for example,
 the following:
 
 
-```{.python}
+```
 def main():
   print("Hello World")
 
@@ -54,7 +54,7 @@ it is common to have a distinct 'main' method that is called from the name check
 
 Let us now move to Dafny.
 
-```{.dafny}
+```
 method Main()
 {
     print "Hello World";
@@ -89,7 +89,7 @@ Within Dafny,
 Finally,
 let us move to Idris.
 
-```{.idris}
+```
 main : IO ()
 main = putStrLn "Hello World"
 ```
