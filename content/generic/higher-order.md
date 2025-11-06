@@ -414,9 +414,9 @@ doubleList (x::xs) = x + x :: doubleList xs
 If we were to triple the elements of a list we would write it as:
 
 ```
-doubleList : (xs : List Int) -> List Int
-doubleList Nil = Nil
-doubleList (x::xs) = x + x + x :: doubleList xs
+tripleList : (xs : List Int) -> List Int
+tripleList Nil = Nil
+tripleList (x::xs) = x + x + x :: tripleList xs
 ```
 
 Notice that the code we are writing follows the same structure,
@@ -426,7 +426,7 @@ We can abstract this traversal as:
 ```
 traverse : (f : a -> b) -> (xs : List a) -> List b
 traverse Nil = Nil
-traverse (x::xs) = f x :: doubleList xs
+traverse (x::xs) = f x :: traverse f xs
 ```
 
 Unlike Python,
