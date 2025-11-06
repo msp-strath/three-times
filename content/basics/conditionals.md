@@ -3,8 +3,8 @@ title: "Conditionals"
 toc: true
 ---
 
-We continue our journey into programming basics by looking at simple control flow using *conditionals* statements and expressions.
-Common to all realisations of conditions is that we can control the execution flow of our program based on a boolean value.
+We continue our journey into programming basics by looking at simple control flow using *conditional* statements and expressions.
+Common to all realisations of conditionals is that we can control our programs execution using boolean values.
 That is,
 *if* the value is `true` *then* flow one way *else* go the other.
 
@@ -54,14 +54,12 @@ else:
    print("equal")
 ```
 
-The keyword `elif` signifies that we wish to perform another test.
+The keyword `elif` signifies that test to be performed.
 
 Finally,
 Python also supports *ternary*-expressions,
 conditionals that one can embed in your program where an expression is expected.
-Ternary expressions,
-in python,
-take the form `<true branch> if <test> else <false branch>`.
+Ternary expressions take the form `<true branch> if <test> else <false branch>`.
 For example:
 
 ```
@@ -135,7 +133,7 @@ if i >= 0
 ```
 
 With conditional expressions,
-we *need* to provide both cases  explicitly.
+we *need* to provide both cases explicitly.
 Further,
 notice the lack of braces to indicate scope.
 Conditional expressions can also support multiple branches:
@@ -179,7 +177,7 @@ generalise booleans and conditional control flow,
 enabling more subtle and advanced control flows to be realised.
 Before that,
 however,
-the next few sections will demonstrate other common control flow patterns.
+the next few sections explore other common control flow patterns.
 Namely,
 [functions/methods](/basics/blocks.html);
 [loops](/basics/loops.html);

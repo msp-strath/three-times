@@ -8,7 +8,7 @@ The control flows we have seen so far,
 all rely on control flow statements to perform the repetition.
 In this (almost)
 last section we look at how we can perform many of the same repetitions using function/method calls.
-This is also known as [recursion](/basics/recursion.html).
+This is known as [recursion](/basics/recursion.html).
 
 ## Python
 
@@ -43,7 +43,7 @@ until the left operand
 (`x`)
 is `0`.
 
-We can even use this approach to recurse over lists,
+We can even use this approach to iterate over lists,
 by making the list smaller for each recursive call.
 The base case being the empty list.
 For example,
@@ -58,7 +58,7 @@ def printList(xs : list[int]):
 
 The method `len` returns the size of `xs`,
 and `xs[1:]` is a *slice* that returns the *tail* of the list.
-[Sequences](/basics/sequences.html) explains list more.
+[Sequences](/basics/sequences.html) explains lists more.
 
 ## Dafny
 
@@ -99,8 +99,7 @@ and unlike Python,
 we cannot perform *method* calls in an expression.
 We need to side-step the expression and bind the recursive call into an intermediate variable (`step`).
 
-
-We can even use this approach to recurse over lists,
+We can use this approach to recurse over lists,
 by making the list smaller for each recursive call.
 The base case being the empty list.
 For example,
@@ -138,7 +137,7 @@ and thus the stopping condition.
 
 We could follow our approach
 (using the length)
-to recurse over lists.
+to iterate over lists.
 There is,
 however,
 in fact a much better way to do so in Idris.
@@ -151,7 +150,10 @@ especially a
 
 ## Coda
 
-We have shown how we can use recursion to iteration over datatypes,
+We have shown how we can use recursion to iteration over
+[datatypes](/datatypes.html),
 specifically numbers and sequences/lists.
 In the next section,
-we will look at sequences in a bit more detail.
+we will look at
+[sequences](/basics/sequences.html)
+in a bit more detail.

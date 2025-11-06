@@ -15,11 +15,11 @@ few,
 key places
 (the RHS when creating variables,
 test position of conditionals,
-et cetera).
+*et cetera*).
 
-Functional programs are *expression* based, and pure.
-
-Purity means that our code is 'side-effect' free, and we cannot interact with
+Functional programs are *expression* based,
+and *pure*.
+Where purity means that our code is 'side-effect' free, and we cannot interact with
 the outside world.
 
 Taking an early break from 'Three Times`,
@@ -46,8 +46,8 @@ Idris
 | bool   | bool  | Bool  |
 
 Providing `true` and `false` values,
-with for Idris the names are capitalised.
-(Booleans are [datatypes](/datatypes/enums.html).)
+within Idris the names are capitalised.
+(Booleans in Idris are [datatypes](/datatypes/enums.html).)
 
 ### Logical operations
 
@@ -59,7 +59,8 @@ Some operations:
 | `x and y` | `if x is false, then x, else y`        |
 | `not x`   | `if x is false, then True, else False` |
 
-In Dafny and Idris, c-style operators are used:
+In Dafny and Idris,
+`C`-style operators are used:
 `||`,
 `&&`,
 and
@@ -109,3 +110,11 @@ Some operations:
 |----------------|-----------|-----------|
 | list[int]      | seq<int>  | List Int  |
 | tuple[int,int] | (int,int) | (Int,Int) |
+
+## Coda
+
+Let us get back on track.
+Before we look at breaking programs down into
+[manageable blocks](/basics/blocks.html),
+we will first think about some basic control flow using
+[conditionals](/basics/conditionals.html).

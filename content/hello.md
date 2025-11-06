@@ -6,8 +6,10 @@ In this first topic,
 we will look at writing your first program:
 One that says `Hello`.
 
-We will do so by first looking at how to write the program,
-and then running it.
+We will do so by first looking at how to
+[write the program](/hello/writing.html),
+and then
+[running it](/hello/saying.html).
 
 ## Learning Outcomes
 

@@ -9,22 +9,23 @@ holds.
 Another form of code repetition is through iteration,
 when we examine the values in a data structure in turn.
 (Also known as *For* loops and *Foreach* loops.)
-Common datatypes that we can iterate over are numbers and sequences
+Common datatypes that we can iterate over are numbers and
+[sequences](/datatypes/sequences.html)
 (lists).
 We can,
 however,
 iterate over other
 [datatypes](/datatypes.html).
 
-
 ## Python
 
 Within Python,
 we can iterate over numbers by establishing a range of numbers to iterate over.
-In effect we are iterating over a list.
+In effect,
+we are iterating over a list.
 
 For example,
-to sum the numbers between 0 and 100 we can iterate over the range.
+to sum the numbers between 0 and 100 we can iterate over the given interval.
 
 ```
 result = 0
@@ -59,7 +60,7 @@ we can iterate over numbers by establishing a range of numbers to iterate over.
 In effect we are,
 again,
 iterating over a list.
-Dafny differs from Python as range creation is a builtin operations.
+Dafny differs from Python as range creation is a builtin operation.
 
 For example,
 to sum the numbers between 0 and 100 we can iterate over the range.
@@ -101,11 +102,12 @@ we will can only repeat expressions using
 
 Iterating over data is another important control flow mechanism.
 With iterators we are traversing data to perform some repeated action.
-In this section we demonstrated this with builtin datatypes `list` (python) and `seq` (dafny), and numbers such as integers.
+In this section we demonstrated this with builtin datatypes `list` (python) and `seq` (dafny),
+and numbers such as integers.
 Common to each is that we are traversing the data structure,
 examining each value in turn.
 We will see in
 [datatypes](/datatypes.html)
 how we can examine the contents of other data structures,
 and use
-[recursion](/basics/recursion.html) to realise the control flow..
+[recursion](/basics/recursion.html) to realise control flow.

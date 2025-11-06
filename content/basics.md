@@ -12,13 +12,23 @@ Specifically,
 we will dive into *basic* programming paradigms looking at:
 
 + [Bindings](/basics/binding.html)
+  how we can store data in addressable locations;
 + [Expressions](/basics/expressions.html)
+  for primitive operations on data;
 + [Conditionals](/basics/conditionals.html)
+  for simple control flow based on boolean values;
 + [Methods/Functions](/basics/blocks.html)
+  for structuring our programs into small,
+  more manageable,
+  blocks;
 + [Loops](/basics/loops.html)
+  for repeating code whilst a condition holds;
 + [Iterations](/basics/iteration.html)
+  for repeating code whilst iterating over a data structure;
 + [Recursion](/basics/recursion.html)
+  for repeating code without the need for explicit control flow statements;
 + [Sequences](/basics/sequences.html)
+  for working with data that can be sequenced;
 
 ## Learning Outcomes
 

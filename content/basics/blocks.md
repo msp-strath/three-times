@@ -109,7 +109,7 @@ def double(i : int) -> int:
 The `return` keyword indicates that we are returning a value.
 
 If we wish to use `double`,
-we need to perform a method call.
+a method call must be performed.
 For example:
 
 ```
@@ -138,7 +138,7 @@ method Main()
 
 Printing *can* fail if the computer runs out of memory.
 Or,
-if we were performing file operations then files may not exist.
+if we were performing file operations on files that do not exist.
 
 Methods contain statements,
 and these statements need to be sequenced.
@@ -181,7 +181,8 @@ parameters *must* be named and type annotations are required.
 Let us now look at returning from methods,
 as all methods must return something.
 
-Consider the method prototype `Double`
+Consider the method prototype `Double`:
+
 ```
 method Double(i : int)
   returns (j : int)
@@ -194,10 +195,10 @@ as when we write specifications we need to refer to the returned variable.
 
 ::: note
 We haven't provided a method body.
-Methods without a body are called 'prototype' methods.
+Methods without a body are called 'prototypes'.
 :::
 
-Let us now look provide the body:
+Let us now provide the body:
 
 ```
 method Double(i : int)
@@ -210,7 +211,7 @@ method Double(i : int)
 The `return` keyword indicates that we are returning a value.
 
 If we wish to use `double`,
-we need to perform a method call.
+a method call must be performed.
 For example:
 
 ```
@@ -270,9 +271,14 @@ function double(i : int) : int
 ```
 
 As with methods we can also name our return type!
-But we cannot bind to it.
-As with methods,
-we can use a named return type to reason about the function's operation.
+To support reasoning about the function's operation.
+
+```
+function double(i : int) : (result : int)
+```
+
+Importantly,
+we cannot bind to this named return type.
 
 ::: exercise
 What happens when you compile this:
@@ -283,7 +289,6 @@ function double(x : int) : (i : int)
   i := x
 }
 ```
-
 :::
 
 
@@ -404,7 +409,7 @@ the function body
 (the equation)
 requires the same number of names.
 That is,
-unless we are doing partial application, which is outside the basics.
+unless we are doing partial application---which is outside the basics.
 
 ## Coda
 
@@ -414,10 +419,10 @@ functions are pure.
 
 Both Python and Idris have more interesting aspects to methods and functions.
 For python,
-this is keyword and default, arguments together with variadic arguments.
+this is keyword and default arguments together with variadic arguments.
 For Idris,
 this includes implicit arguments and default arguments.
 All of which is outside the scope of the course.
 
 Now that we know how to divide our programs into blocks,
-the next section begins our look at what we can do inside those blocks.
+the next section begins our deeper look at what we can do inside those blocks.

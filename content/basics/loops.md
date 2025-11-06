@@ -109,7 +109,8 @@ while counter <= 100
 }
 ```
 
-With while loops we have to provide an explicit test.
+With while loops,
+we have to provide an explicit test.
 
 Beware that the condition expects a boolean value that holds true.
 Thus,
@@ -133,7 +134,7 @@ cannot prove temination; try supplying a decreasing clause for the loop
 While Dafny is not a total language,
 it supports reasoning about program termination.
 Within CS886,
-we will see how we can do this in CS886.
+we will talk about this more.
 To show a snippet let us first look at how to exit and advance loops.
 
 Like Python,
@@ -188,21 +189,24 @@ while true
 
 Counting down demonstrates,
 to the compiler,
-that we will eventually terminate.
+that our program will eventually end.
 
 ## Idris
 
 Idris is a functional language using expressions.
 As with Dafny's functional fragment,
-we will can only repeat expressions using
+we can only repeat expressions using
 [recursion](/basics/recursion.html).
 
 ## Coda
 
 Loops are an important imperative control flow operation,
 enabling code to be repeated under certain conditions.
-Next we will look at [Iterators](/basics/iteration.html),
+Next we will look at
+[Iterators](/basics/iteration.html),
 bespoke statements that enable repetition when iterating over specific data structures.
 The repetition provided by Loops is based on tests.
 We will look at iterators next,
-before looking at [Recursion](/basics/recursion.html) which provides *a* generalised way to repeat one's actions.
+before looking at
+[Recursion](/basics/recursion.html)
+which provides *a* generalised way to repeat one's actions.

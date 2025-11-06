@@ -1,11 +1,11 @@
 ---
-title: "Seuqnces"
+title: "Sequences"
 toc: true
 ---
 
 In this final section on programming basics,
 we will look at sequences:
-sequences of data.
+lists of data.
 We have seen their use before when looking at
 [loops](/basics/loops.html),
 [iterators](/basics/iteration.html),
@@ -42,11 +42,14 @@ head : str = xs[0]
 ```
 
 To obtain the tail,
-we can *slice* the list.
+we can
+[*slice*](https://docs.python.org/3/library/functions.html#slice)
+the list.
 Slicing uses the same notation as indexing,
 but with a colon
-(`:`)
+(`<start>:<stop>:<step>`)
 that indicates the range to slice out.
+Here the `:<step>` is optional.
 
 For example,
 to obtain a list's *tail*
@@ -61,13 +64,13 @@ Other operations include list append.
 Within Python,
 there are two ways to append.
 
-The first uses a unary operator (`+`):
+The first uses the unary operator (`+`):
 
 ```
 xs_new : list[str] = xs + ["DDD"]
 ```
 
-Here append returns a new list,
+Here append returns a *new list*,
 thus treating `xs` and `["DDD"]` in an immutable fashion.
 
 ::: exercise
@@ -75,7 +78,7 @@ We can consider the append operator as a method.
 Trying writing a method `append` using `+` in the method body.
 :::
 
-Another way to append lists is to use a mutable oepration.
+The other way to append lists is to use a mutable operation.
 Within Python,
 lists are objects.
 The append method call
@@ -100,7 +103,8 @@ for x in xs:
   print(x)
 ```
 
-We can even do so using a while-[loop](/basics/loops.html).
+We can even do so using a while-[loop](/basics/loops.html)
+but leave that as an exercise for you the reader.
 
 ::: exercise
 Write a method `double` that uses a while-loop to double the elements in a list of integers.
@@ -122,7 +126,8 @@ var xs : seq<string> := ["A", "BB", "CCC"];
 
 The empty list is 'just' empty: `[]`.
 When binding an empty type to a variable we need to provide an *explicit* type annotation.
-There is insufficient information from the value as to what the list could contain.
+There is insufficient information from the value,
+to know what the list could contain.
 
 With our lists we can operate over/with them.
 Indexing is a builtin operation,
@@ -155,16 +160,14 @@ var tail : seq[string] = xs[1..]
 ```
 
 Other operations include list append.
-Within Python,
-there are two ways to append.
-
-The first uses a unary operator (`+`):
+Within Dafny,
+we can append lists using the unary operator (`+`):
 
 ```
 var xs_new : list[str] := xs + ["DDD"];
 ```
 
-Here append returns a new list,
+Here append returns a *new list*,
 thus treating `xs` and `["DDD"]` in an immutable fashion.
 
 ::: exercise
@@ -184,7 +187,8 @@ for i := 0 to |xs| // <- here |xs| is used to get the size of a sequence.
 
 Dafny does not support `foreach` loops.
 
-We can even iterate over lists using a while-[loop](/basics/loops.html).
+We can even iterate over lists using a while-[loop](/basics/loops.html),
+but we leave that as an exercise for you the reader.
 
 ::: exercise
 Write a method `double` that uses a while-loop to double the elements in a list of integers.
@@ -194,7 +198,7 @@ Write a method `double` that uses a while-loop to double the elements in a list 
 ## Idris
 
 Unlike Python and Dafny,
-lists in Idris are a not *builtin* datatype.
+lists in Idris are not a *builtin* datatype.
 Lists are a [generic datatype](/datatype/generic.html).
 Specifically,
 
@@ -220,14 +224,15 @@ xs = "A" :: "BB" :: "CCC" Nil
 
 The empty list is 'just' empty: `[]` or `Nil`.
 When binding an empty type to a variable we need to provide an *explicit* type annotation.
-There is insufficient information from the value as to what the list could contain.
+There is insufficient information from the value,
+to know what the list could contain.
 
 With our lists we can operate over/with them.
 Indexing is a function
 (`index`)
 that,
 given an index that is within bounds,
-will recurse over the list to the provided index.
+will iterate over the list to the provided index.
 
 When operating over data,
 it is common to use [matching](/datatypes/enums.html)
@@ -297,6 +302,9 @@ doubleXS : (xs : List Int) -> (ys : List Int) -> List Int
 doubleXS Nil = Nil
 doubleXS (x::xs) = x + x :: doubleXS xs
 ```
+
+[Higher-Order Programming](/generic/higher-order.html)
+details how we can use generic program to make `doubleXS` easier to write.
 
 ## Coda
 
