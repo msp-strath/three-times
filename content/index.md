@@ -163,7 +163,7 @@ At the end of these notes are a series of larger exercises gifted from Strathcly
 :  Demonstrating the various ways in make our code more generic and reduce repetition.
 
 We also provide a series of
-[addendums](/addendums.html)
+[addendums](/addendum.html)
 detailing some interesting topics.
 
 ## Thanks

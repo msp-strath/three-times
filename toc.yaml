@@ -78,6 +78,10 @@ topics:
       - name: "Higher-Order Programs"
         href: "/generic/higher-order.html"
 
+  # [ Classes ]
+  - name: "Classes"
+    href: "/objects.html"
+
   # [ Exercises ]
   - name: "Exercises"
     href: "/exercises.html"
